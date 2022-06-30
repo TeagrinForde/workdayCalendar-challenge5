@@ -13,6 +13,12 @@ textarea {
   padding: 10px;
 }
 
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -23,11 +29,14 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  display: inline-table;
+  padding-top: 0;
 }
 
 .time-block {
   text-align: center;
   border-radius: 15px;
+  padding: 50px;
 }
 
 .row {
@@ -40,6 +49,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  min-width: 100px;
 }
 
 .past {
@@ -65,7 +75,13 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.saveBtn:hover {
   transition: all 0.3s ease-in-out;
+  background-color: #77dd77;
+}
+
+.saveBtn img {
+  padding: 0;
+  margin: 0;
+  display: block;
 }
