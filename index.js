@@ -8,10 +8,20 @@ function displayTime() {
 displayTime();
 
 //-----------------------
+var currentTime = moment();
+var b = $('<p>').text();
+
+//different function to highlight 
+
+
+
+//-----------------------
+
 $(document).ready(function() {
     $('.saveBtn9').click(function () {
         var textContent = $('.event9').val();
         $('.event9').html(textContent);
         alert ('Your even has been saved');
+        console.log(textContent);
     });
 });
