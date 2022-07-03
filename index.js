@@ -8,20 +8,14 @@ function displayTime() {
 displayTime();
 
 //-----------------------
-var currentTime = moment();
-var b = $('<p>').text();
+var currentTime = moment().hour();
+var b = [$('.row')]; //reference p value
+console.log(b);
+console.log(currentTime);
 
-//different function to highlight 
+//time color change
 
 
 
 //-----------------------
 
-$(document).ready(function() {
-    $('.saveBtn9').click(function () {
-        var textContent = $('.event9').val();
-        $('.event9').html(textContent);
-        alert ('Your even has been saved');
-        console.log(textContent);
-    });
-});
