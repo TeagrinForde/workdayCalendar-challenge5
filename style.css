@@ -13,12 +13,6 @@ textarea {
   padding: 10px;
 }
 
-p {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -29,28 +23,24 @@ p {
 
 .description {
   white-space: pre-wrap;
-  display: inline-table;
-  padding-top: 0;
 }
 
 .time-block {
   text-align: center;
   border-radius: 15px;
-  padding: 50px;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-  min-width: 800px;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-  min-width: 100px;
+  padding-top: 30px;
 }
 
 .past {
@@ -74,17 +64,21 @@ p {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .saveBtn:hover {
-  transition: all 0.3s ease-in-out;
   background-color: #77dd77;
 }
 
 .saveBtn img {
-  padding: 0;
-  margin: 0;
-  display: block;
   width: 50px;
   height: 50px;
 }

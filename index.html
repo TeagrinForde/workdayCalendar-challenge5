@@ -20,100 +20,81 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <div class="description" id="calendar">
+  <div id="calendar" class="container col-12">
     <!-- Timeblocks go here -->
-    <div class="time-block">
 
-      <div class="row">
-        <div class="hour">
-          <p>9 am</p>
-        </div>
-        <textarea class="event9" id="eventInput9am" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save9am">
+      <div id="hour9" class="row time-block">
+        <div class="hour col-2">9 am</div>
+        <textarea id="hour-9" class="event description col-8" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save9am">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
 
-      <div class="row">
-        <div class="hour">
-          <p>10 am</p>
-        </div>
-        <textarea class="event10" id="eventInput10am" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save10am">
+      <div id="hour10" class="row time-block">
+        <div class="hour col-2">10 am</div>
+        <textarea id="hour-10" class="event col-8" id="eventInput10am" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save10am">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
 
-      <div class="row">
-        <div class="hour">
-          <p>11 am</p>
-        </div>
-        <textarea class="event11" id="eventInput11am" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save11am">
+      <div id="hour11" class="row time-block">
+        <div class="hour col-2">11 am</div>
+        <textarea id="hour-11" class="event col-8" id="eventInput11am" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save11am">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
 
-      <div class="row">
-        <div class="hour">
-          <p>12 pm</p>
-        </div>
-        <textarea class="event12" id="eventInput12pm" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save12pm">
+      <div id="hour12" class="row time-block">
+        <div class="hour col-2">12 pm</div>
+        <textarea id="hour-12" class="event col-8" id="eventInput12pm" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save12pm">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
 
-      <div class="row">
-        <div class="hour">
-          <p>1 pm</p>
-        </div>
-        <textarea class="event1" id="eventInput1pm" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save1pm">
+      <div id="hour13" class="row time-block">
+        <div class="hour col-2" value="13" >1 pm</div>
+        <textarea id="hour-13" class="event col-8" id="eventInput1pm" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save1pm">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
 
-      <div class="row">
-        <div class="hour">
-          <p>2 pm</p>
-        </div>
-        <textarea class="event2" id="eventInput2pm" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save2pm">
+      <div id="hour14" class="row time-block">
+        <div class="hour col-2" value="14" >2 pm</div>
+        <textarea id="hour-14" class="event col-8" id="eventInput2pm" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save2pm">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
 
-      <div class="row">
-        <div class="hour">
-          <p>3 pm</p>
-        </div>
-        <textarea class="event3" id="eventInput3pm" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save3pm">
+      <div id="hour15" class="row time-block">
+        <div id="hour-15" class="hour col-2" value="15" >3 pm</div>
+        <textarea class="event col-8" id="eventInput3pm" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save3pm">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
 
-      <div class="row">
-        <div class="hour">
-          <p>4 pm</p>
-        </div>
-        <textarea class="event4" id="eventInput4pm" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save4pm">
+      <div id="hour16" class="row time-block">
+        <div class="hour col-2" value="16" >3 pm</div>
+        <textarea id="hour-16" class="event col-8" id="eventInput4pm" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save4pm">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
 
-      <div class="row">
-        <div class="hour">
-          <p>5 pm</p>
-        </div>
-        <textarea class="event5" id="eventInput5pm" placeholder="Click to insert event"></textarea>
-        <button type="submit" value="Save" class="saveBtn" id="save5pm">
+      <div id="hour17" class="row time-block">
+        <div class="hour col-2" value="17" >5 pm</div>
+        <textarea id="hour-17" class="event col-8" id="eventInput5pm" placeholder="Click to insert event"></textarea>
+        <button type="submit" value="Save" class="saveBtn col-2" id="save5pm">
           <img src="./savebtn.PNG" alt="SAVE" type="image/png">
         </button>
       </div>
-    </div>
+
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
