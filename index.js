@@ -31,6 +31,7 @@ function timeTracker() {                  //highlight row based on time
 }
 timeTracker();
 //-----------------------
+var saveButton = document.querySelector('.saveBtn');
 
 localStorage.nine = $('#hour-9.event').val(localStorage.getItem('hour-9'));
 document.getElementById('hour-9').innerHTML = localStorage.nine;
@@ -44,12 +45,12 @@ $('#hour-3.event').val(localStorage.getItem('hour-3'));
 $('#hour-4.event').val(localStorage.getItem('hour-4'));
 $('#hour-5.event').val(localStorage.getItem('hour-5'));
 
-function saveInput() {
+function saveInput(event) {
+    event.preventDefault();
     var eventInputEl = document.querySelector('.event').value;
     localStorage.setItem('eventInputEl', eventInputEl);
     console.log(eventInputEl);
-    document.getElementById('hour-9').innerHTML = localStorage.getItem('eventInputEl');
+    document.getElementsByClassName('event').innerHTML = localStorage.getItem('eventInputEl');
 }
 
-var saveButton = document.querySelector('.saveBtn');
 saveButton.addEventListener('click', saveInput);
